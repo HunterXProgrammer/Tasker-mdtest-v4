@@ -1,5 +1,5 @@
 # Description
-Send WhatsApp Images/Videos/PDF/Documents/Voice Messages automatically using Tasker.
+Send WhatsApp Text/Images/Videos/PDF/Documents/Voice Messages automatically using Tasker.
 
 Previous post intro:-
 
@@ -8,7 +8,19 @@ Previous post intro:-
 # Details
 Contains assets that are used for running mdtest directly in Tasker, without needing Termux.
 
-Made for Project V3.
+Made for Project V4
+
+# List Of Supported Features
+- Send Text Messages
+- Send Images
+- Send Videos
+- Send PDF/Documents
+- Mute/Unmute chats
+- Pin/Unpin chats
+- Archive/Unarchive chats
+- Receive details of incoming messages as Tasker variables, for automated replies (check **[VARIABLES]()**)
+
+>The above features works for both single contacts and group chats.
 
 # Disclaimer
 You are responsible for what you do with this.
@@ -21,9 +33,7 @@ Check this Tasker Reddit **[post](https://www.reddit.com/r/tasker/comments/11wi2
 **NOTE:-**
 >This section is helpful for those who want to make shell scripts to use `mdtest` to send messages. Not recommended for Tasker beginners since there are ready made Taskenet links in the Tasker Reddit Post that you can import.
 
-The previous **Project V2** was made with solely Tasker in mind and didn't have CLI support.
-
-I'm adding preliminary CLI support with some improvements in this **Project V3**.
+I'm adding preliminary CLI support with some improvements in this **Project V4**.
 
 #### CLI In Tasker
 Added preliminary CLI support to run `mdtest` from within Tasker itself using action [Run Shell].
