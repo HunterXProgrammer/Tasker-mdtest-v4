@@ -3,7 +3,7 @@ This Section is recommended for advanced Tasker users.
 
 It contains a detailed list of variables that is populated when a WhatsApp message of the corresponding TYPE is received
 
-Based on these vairables, you can setup your own Tasks that would analyze the messages and send back automated replies.
+Based on these variables, you can setup your own Tasks that would analyze the messages and send back automated replies.
 
 # List Of Tasker Variables
 These variables are populated whenever a WhatApp message of the corresponding type is received.
