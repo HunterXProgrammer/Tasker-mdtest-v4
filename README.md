@@ -15,10 +15,12 @@ Made for Project V4
 - Send Images
 - Send Videos
 - Send PDF/Documents
-- Mute/Unmute chats
-- Pin/Unpin chats
-- Archive/Unarchive chats
-- Receive details of incoming messages as Tasker variables, for automated replies (check **[VARIABLES]()**)
+- Send Poll messages
+- Mute/Unmute chats (New!)
+- Pin/Unpin chats (New!)
+- Archive/Unarchive chats (New!)
+- Multi-Number/User support (New!)
+- Receive details of incoming messages as Tasker variables. Can use this for automated replies (check **[VARIABLES]()**)
 
 >The above features works for both single contacts and group chats.
 
