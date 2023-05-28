@@ -49,8 +49,8 @@ This will prepare Tasker to enable CLI support natively.
 Your [Run Shell] action to use `mdtest` will look like this -
 
     #!/system/bin/sh
-    cd /data/data/net.dinglisch.android.taskerm/files/whatsmeow4/mdtest
-    sh ./mdtest COMMAND PARAMETERS
+    cd /data/data/net.dinglisch.android.taskerm/files/whatsmeow4/mdtest.7775
+    sh /data/data/net.dinglisch.android.taskerm/files/whatsmeow4/mdtest/mdtest COMMAND PARAMETERS
 
 And your [Run Shell] action to use `ffmpeg`(check [this](https://github.com/HunterXProgrammer/Tasker-mdtest#note-about-audio-messages)) will look like this -
 
