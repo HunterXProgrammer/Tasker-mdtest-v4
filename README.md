@@ -33,7 +33,7 @@ Check this Tasker Reddit **[post](https://www.reddit.com/r/tasker/comments/11wi2
 
 ### For CLI Users
 **NOTE:-**
->This section is helpful for those who want to make shell scripts to use `mdtest` to send messages. Not recommended for Tasker beginners since there are ready made Taskenet links in the Tasker Reddit Post that you can import.
+>This section is helpful for those who want to make shell scripts to use `mdtest` to send messages. Not recommended for Tasker beginners since there are ready made Taskernet links in the Tasker Reddit Post that you can import.
 
 I'm adding preliminary CLI support with some improvements in this **Project V4**.
 
@@ -47,13 +47,13 @@ This will prepare Tasker to enable CLI support natively.
 Your [Run Shell] action to use `mdtest` will look like this -
 
     #!/system/bin/sh
-    cd /data/data/net.dinglisch.android.taskerm/files/whatsmeow3/mdtest
+    cd /data/data/net.dinglisch.android.taskerm/files/whatsmeow4/mdtest
     sh ./mdtest COMMAND PARAMETERS
 
 And your [Run Shell] action to use `ffmpeg`(check [this](https://github.com/HunterXProgrammer/Tasker-mdtest#note-about-audio-messages)) will look like this -
 
     #!/system/bin/sh
-    sh /data/data/net.dinglisch.android.taskerm/files/whatsmeow3/ffmpeg/ffmpeg -y -i "/path/to/input/file" -codec:a libopus -ac 1 -ar 48000 -f ogg "/path/to/output/file"
+    sh /data/data/net.dinglisch.android.taskerm/files/whatsmeow4/ffmpeg/ffmpeg -y -i "/path/to/input/file" -codec:a libopus -ac 1 -ar 48000 -f ogg "/path/to/output/file"
     ##
 
 Check **[Commands And Parameters](https://github.com/HunterXProgrammer/Tasker-mdtest#commands-and-parameters)** for more info about the available CLI commands.
@@ -85,7 +85,7 @@ You can build and compile it by yourself in Termux using the build script -
 >
 >Type -
 >
->`cd ~/whatsmeow3/mdtest && ./mdtest`
+>`cd ~/whatsmeow4/mdtest && ./mdtest`
 >
 >to check if WhatsApp qr code is generated properly.
 >
@@ -102,7 +102,7 @@ This finishes the CLI setup.
 Your script will look like this -
 
     #!/data/data/com.termux/files/usr/bin/bash
-    cd ~/whatsmeow3/mdtest
+    cd ~/whatsmeow4/mdtest
     ./mdtest COMMAND PARAMETERS
 
 ### Commands And Parameters
@@ -169,8 +169,6 @@ You can use this properly optimized output audio file in the voice messages.
 **[whatsmeow](https://github.com/tulir/whatsmeow) -** Go library `mdtest` is based on.
 
 **[Termux](https://github.com/termux/termux-app) -** The best Android terminal. Allows compiling `mdtest` natively without needing PC or cross-toolchains. `ffmpeg` binaries used from here.
-
-**[TermuxAm](https://github.com/termux/TermuxAm) -** Allows apps to use `am` command from user shell.
 
 **[zoom](https://github.com/anitasv/zoom) -** Javascript library that allows making cool zoomable/rotatable Tasker webview Scenes.
 
