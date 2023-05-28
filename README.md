@@ -16,6 +16,8 @@ Made for Project V4
 - Send Videos
 - Send PDF/Documents
 - Send Poll messages
+- Mark as read
+- Revoke messages
 - Mute/Unmute chats (New!)
 - Pin/Unpin chats (New!)
 - Archive/Unarchive chats (New!)
