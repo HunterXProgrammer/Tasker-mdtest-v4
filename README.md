@@ -8,7 +8,7 @@ Previous post intro:-
 # Details
 Contains assets that are used for running mdtest directly in Tasker, without needing Termux.
 
-Made for Project V4
+Made for Mdtest Project V4
 
 # List Of Supported Features
 - Send Text Messages
@@ -22,7 +22,11 @@ Made for Project V4
 - Pin/Unpin chats (New!)
 - Archive/Unarchive chats (New!)
 - Multi-Number/User support (New!)
+
+(previously Mdtest could support only one WhatsApp number, but now you can have as many as you want)
+
 - Receive details of incoming messages as Tasker variables. Can use this for automated replies (check **[VARIABLES]()**)
+- Added support to easily scan QR Code over devices connected to the same Wi-Fi.
 
 >The above features works for both single contacts and group chats.
 
