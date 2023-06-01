@@ -6,7 +6,7 @@ Previous post intro:-
 >Recently I've been getting a lot of inquiries on how to send images, videos or documents in WhatsApp using Tasker. Possibly with the screen off, phone locked, without unlocking, etc. Had some time to make this so here it is.
 
 # Details
-Contains assets that are used for running mdtest directly in Tasker, without needing Termux.
+Contains assets that are used for running Mdtest directly in Tasker, without needing Termux.
 
 Made for Mdtest Project V4
 
@@ -35,7 +35,7 @@ You are responsible for what you do with this.
 
 # Instructions
 ### For Tasker Users
-Check this Tasker Reddit **[post](https://www.reddit.com/r/tasker/comments/11wi2om/project_share_sendreceive_whatsapp_message/)** for more info and importable Taskernet links.
+Check this Tasker Reddit **[post]()** for more info and importable Taskernet links.
 
 ### For CLI Users
 **NOTE:-**
@@ -46,7 +46,7 @@ I'm adding preliminary CLI support with some improvements in this **Project V4**
 #### CLI In Tasker
 Added preliminary CLI support to run `mdtest` from within Tasker itself using action [Run Shell].
 
-1\) Set it up as described in this Tasker Reddit **[post](https://www.reddit.com/r/tasker/comments/11wi2om/project_share_sendreceive_whatsapp_message/)**.
+1\) Set it up as described in this Tasker Reddit **[post]()**.
 
 This will prepare Tasker to enable CLI support natively.
 
@@ -57,24 +57,24 @@ Your [Run Shell] action to use `mdtest` will look like this -
     cd $mdtest_dir.7775
     sh $mdtest_dir/mdtest COMMAND PARAMETERS
 
-And your [Run Shell] action to use `ffmpeg`(check [this](https://github.com/HunterXProgrammer/Tasker-mdtest#note-about-audio-messages)) will look like this -
+And your [Run Shell] action to use `ffmpeg`(check [this](https://github.com/HunterXProgrammer/Tasker-mdtest-v4#note-about-audio-messages)) will look like this -
 
     #!/system/bin/sh
     sh /data/data/net.dinglisch.android.taskerm/files/whatsmeow4/ffmpeg/ffmpeg -y -i "/path/to/input/file" -codec:a libopus -ac 1 -ar 48000 -f ogg "/path/to/output/file"
     ##
 
-Check **[Commands And Parameters](https://github.com/HunterXProgrammer/Tasker-mdtest#commands-and-parameters)** for more info about the available CLI commands.
+Check **[Commands And Parameters](https://github.com/HunterXProgrammer/Tasker-mdtest-v4#commands-and-parameters)** for more info about the available CLI commands.
 
 #### CLI In Termux
 CLI Setup:-
 
-1\) Install and open [Termux](https://f-droid.org/en/packages/com.termux/) in your device.
+1\) Install and open **[Termux](https://f-droid.org/en/packages/com.termux/)** in your device.
 
-2\) Grab the pre-compiled  binary from **[releases](https://github.com/HunterXProgrammer/Tasker-mdtest/releases/tag/mdtest-V3-assets)** or use the build script to compile it yourself in Termux.
+2\) Grab the pre-compiled  binary from **[releases](https://github.com/HunterXProgrammer/Tasker-mdtest-v4/releases/tag/mdtest-V4-assets)** or use the build script to compile it yourself in Termux.
 
 **Eg:-** Depending on your device architecture(use `uname -m` to find out), you can download for `arm`,`arm64`(aarch64),`x86` and `x86_64` like this -
 
-    arch=arm64 && curl -s -L -O "https://github.com/HunterXProgrammer/Tasker-mdtest/releases/download/mdtest-V3-assets/mdtest-${arch}.zip" && mkdir -p ~/whatsmeow3/mdtest && unzip -o -d ~/whatsmeow3/mdtest mdtest-${arch}.zip && chmod -R 700 ~/whatsmeow3/mdtest
+    arch=arm64 && curl -s -L -O "https://github.com/HunterXProgrammer/Tasker-mdtest-v4/releases/download/mdtest-V4-assets/mdtest-${arch}.zip" && mkdir -p ~/whatsmeow4/mdtest && unzip -o -d ~/whatsmeow4/mdtest mdtest-${arch}.zip && chmod -R 700 ~/whatsmeow4/mdtest
 
 OR
 
@@ -84,7 +84,7 @@ You can build and compile it by yourself in Termux using the build script -
 
 &nbsp;
 
-    curl -s -L "https://github.com/HunterXProgrammer/Tasker-mdtest/releases/download/mdtest-V3-assets/install_whatsmeow3_termux.sh" | bash
+    curl -s -L "https://github.com/HunterXProgrammer/Tasker-mdtest-v4/releases/download/mdtest-V4-assets/install_whatsmeow4_termux.sh" | bash
 
 3\) After that confirm WhatsApp qr code like this -
 
@@ -161,11 +161,11 @@ As explained **[here](https://www.reddit.com/r/tasker/comments/10wiahq/comment/j
 
 >About sending audio voice message, WhatsApp is extremely specific on what type of audio file it can accept.
 >
->The audio file must be Mime-Type: application/ogg, audio/ogg, sent as audio/ogg; codecs=opus, Container: ogg and Codec: opus.
+>The audio file must be Mime-Type: `application/ogg`, `audio/ogg`, sent as `audio/ogg; codecs=opus`, Container: `ogg` and Codec: `opus`.
 >
->So in case you want to send a mp3 file, you'd have to convert it into ogg with the above specifications.
+>So in case you want to send a `mp3` file, you'd have to convert it into `ogg` with the above specifications.
 >
->We will be using the versatile `ffmpeg` to convert the mp3,wav etc, audio files into ogg.
+>We will be using the versatile `ffmpeg` to convert the `mp3`,`wav` etc, audio files into `ogg`.
 
 In Termux install `ffmpeg` using `pkg install -y ffmpeg` and then -
 
