@@ -136,9 +136,9 @@ The **COMMAND** and **PARAMETERS** are:-
     react <jid> <message ID> <reaction>
     revoke <jid> <message ID>
     senddoc <jid> <document path> <title> [mime-type]
-    sendvid <jid> <video path> [thumbnail path]
+    sendvid <jid> <video path> [thumbnail path] [caption] (note: if sending caption without specifying "thumbnail path", then put "null" in it's place.)
     sendaudio <jid> <audio path>
-    sendimg <jid> <image path> [thumbnail path] [caption <note: if sending caption without specifying "thumbnail path", then put "null" in it's place.>]
+    sendimg <jid> <image path> [thumbnail path] [caption] (note: if sending caption without specifying "thumbnail path", then put "null" in it's place.)
     setstatus <message>
     sendpoll <jid> <max answers> <question> -- <option 1> / <option 2> / ...
     markread <jid> <message ID 1> [message ID X] (Note: Can add multiple message IDs to mark as read. [] is optional)
