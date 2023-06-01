@@ -8,11 +8,13 @@ Based on these variables, you can setup your own Tasks that would analyze the co
 # List Of Tasker Variables
 These variables are populated whenever a WhatApp message of the corresponding type is received.
 
-**Note:-** You need to run **"Mdtest - Start (V4)"** from the **"Receive Messages"** Project in `%mode` = `1` for the variables to be populated in the Task **"This Task Runs When Message Received V4"**.
+**Note:-** You need to run **"Mdtest - Start (V4)"** from the **"Receive Messages"** Project in `%mode` = `1` for the variables to be populated in the Task **"This Task Runs When Message Received (V4)"**.
 
 #### Generally Available For All Message Types:-
 
 `%type` = The type of message received. Can be one of -> message, extended_message, button_response_message, list_response_message or poll_response_message.
+
+`%port` = Think of it as a unique identifier that is used for distinction among multiple numbers that you might use.
 
 `%sender_name` = Name of the sender. Only set if the sender is saved in contacts.
 
