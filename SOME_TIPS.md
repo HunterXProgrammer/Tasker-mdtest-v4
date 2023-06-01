@@ -4,4 +4,4 @@
 
     All done. While mdtest is running, you can use the **"Send Messages"** Project to send rows and rows of messages to single contacts/groups.
 
-  - You can now easily scan the QR Code on devices connected to the same Wi-Fi network.
+  - You can now easily scan the QR Code on devices connected to the same Wi-Fi/Hotspot network.
