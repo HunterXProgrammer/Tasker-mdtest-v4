@@ -142,7 +142,7 @@ The **COMMAND** and **PARAMETERS** are:-
     setstatus <message>
     sendpoll <jid> <max answers> <question> -- <option 1> / <option 2> / ...
     markread <jid> <message ID 1> [message ID X] (Note: Can add multiple message IDs to mark as read. [] is optional)
-    mute <jid> <action> <hours> (default is 8hrs, if 0 then indefinitely")
+    mute <jid> <action> <hours> (default is 8hrs, if 0 then indefinitely)
     pin <jid> <action>
     archive <jid> <action>
 
