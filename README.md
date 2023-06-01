@@ -16,6 +16,7 @@ Made for Mdtest Project V4
 - Send Videos
 - Send PDF/Documents
 - Send Poll messages
+- Send Poll messages
 - Mark as read
 - Revoke messages
 - Mute/Unmute chats (New!)
