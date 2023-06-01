@@ -26,7 +26,7 @@ Made for Mdtest Project V4
 (previously Mdtest could support only one WhatsApp number, but now you can have as many as you want)
 
 - Receive details of incoming messages as Tasker variables. Can use this for automated replies (check **[VARIABLES]()**)
-- Added support to easily scan QR Code over devices connected to the same Wi-Fi (check **[Some Tips](https://github.com/HunterXProgrammer/Tasker-mdtest-v4/blob/main/SOME_TIPS.md)**.
+- Added support to easily scan QR Code over devices connected to the same Wi-Fi (check **[Some Tips](https://github.com/HunterXProgrammer/Tasker-mdtest-v4/blob/main/SOME_TIPS.md)**).
 
 >The above features works for both single contacts and group chats.
 
