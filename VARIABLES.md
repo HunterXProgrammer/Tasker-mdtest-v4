@@ -14,7 +14,7 @@ These variables are populated whenever a WhatApp message of the corresponding ty
 
 `%type` = The type of message received. Can be one of -> message, extended_message, button_response_message, list_response_message or poll_response_message.
 
-`%port` = Think of it as a unique identifier that is used for distinction among multiple numbers that you might use.
+`%port` = Think of it as a unique identifier that is used for distinction when you use multiple numbers.
 
 `%sender_name` = Name of the sender. Only set if the sender is saved in contacts.
 
