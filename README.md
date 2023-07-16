@@ -147,7 +147,7 @@ The **COMMAND** and **PARAMETERS** are:-
     pin <jid> <action>
     archive <jid> <action>
 
-The **"<>"** means required, the **"[ ]"** means optional and **\<action\>** is one of **true|fasle**.
+The **"<>"** means required, the **"[ ]"** means optional and **\<action\>** is one of **true|false**.
 
 #### Note About JID
 For single contacts, JID is usually the country-code followed by the phone-number and appended with "@s.whatsapp.net".  
