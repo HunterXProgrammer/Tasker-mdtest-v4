@@ -1,3 +1,5 @@
+#### (This has been deprecated. Use the new and updated **[Project Mdtest V5](https://github.com/HunterXProgrammer/Tasker-MdtestV5)**)
+
 # Description
 Send WhatsApp Text/Images/Videos/PDF/Documents/Voice Messages automatically using Tasker.
 
